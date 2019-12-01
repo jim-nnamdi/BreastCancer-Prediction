@@ -1,9 +1,3 @@
-<h1></h1>
-<p>
-
-</p>
-
-------------
 
 # Breast Cancer Prediction
 > Predicts whether the type of breast cancer is Malignant or Benign
