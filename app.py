@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from svm_func import train_svm, test_svm, predict_svm
+from helper_functions.svm_func import train_svm, test_svm, predict_svm
 
 import numpy as np
 import matplotlib.pyplot as plt

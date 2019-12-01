@@ -51,4 +51,4 @@ def predict_svm(clf, inp):
 	acc = clf.predict_proba(inp)
 	print("The running time: ",time()-t)
 
-	return output, acc, time()-t;
+	return output, acc, time()-t
