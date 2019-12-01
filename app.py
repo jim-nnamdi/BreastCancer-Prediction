@@ -1,24 +1,26 @@
+# Import the necessary files and libraries
 from flask import Flask, render_template, request
-
 from helper_functions.svm_func import train_svm, test_svm, predict_svm
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
-
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from time import time
 
-
+# Initialize the main App file by call-hinting it
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
+
+# This function with the above route takes us to
+# the homepage to view a lil about the OS project
 @app.route('/')
 def hello_method():
 	return render_template('home.html')
 
+# The function below actually renders the
+# Prediction form for endusers to access 
 @app.route('/predict', methods=['POST']) 
 def login_user():
 
@@ -61,6 +63,8 @@ def login_user():
 		acc=acc_y
 	return render_template('result.html', output=output, accuracy=round(acc*100,3), time=t)
 
+# The function renders the profile page for an
+# Already Logged in user
 @app.route('/profile')
 def display():
 	return render_template('profile.html')
