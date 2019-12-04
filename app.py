@@ -69,9 +69,7 @@ def login_user():
 def display():
 	return render_template('profile.html')
 
-	
-	
-
+# Run the Main event Loop for the Application
 if __name__=='__main__':
 	global clf 
 	clf = train_svm()
