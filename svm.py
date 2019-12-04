@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Breast Cancer Data.csv')
+dataset = pd.read_csv('CancerDataset.Breast Cancer Data.csv')
 X = dataset.iloc[:, 2:32].values
 y = dataset.iloc[:, 1].values
 
