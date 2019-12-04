@@ -1,8 +1,9 @@
+# These helper functions actually aid in passing vals 
+# On the main app prediction Page
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
-
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 from time import time
